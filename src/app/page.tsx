@@ -7,14 +7,19 @@ import {
   CardImage,
   CardService,
   CardVideo,
+  Carousel,
   CheckBox,
+  Container,
   CopyToClipboard,
   ExternalLink,
   FilterContainer,
+  Footer,
   Img,
+  Navbar,
   PaginationItem,
   SectionTitle,
   Select,
+  VideoPlayer,
 } from '@/components';
 import { useState } from 'react';
 
@@ -39,7 +44,8 @@ const Home = () => {
   };
 
   return (
-    <div>
+    <Container className='flex flex-col'>
+      <Navbar page='home' />
       <h1>Test</h1>
       <div className="flex flex-col gap-6">
         <Button
@@ -143,18 +149,44 @@ const Home = () => {
           description="Realización de videos corporativos y contenido para redes sociales, así como  producción en streaming y eventos, además de fotografía de producto."
         />
         <CardVideo
-          id='video-1'
-          src='https://res.cloudinary.com/miguelcc/video/upload/v1723839877/Logo_1Up_Azules_Y_Naranjas_bnlahh.mp4'
-          title='Reel'
-          description='reel description'
-          date='2025'
+          id="video-1"
+          src="https://res.cloudinary.com/miguelcc/video/upload/v1723839877/Logo_1Up_Azules_Y_Naranjas_bnlahh.mp4"
+          title="Reel"
+          description="reel description"
+          date="2025"
           width={700}
           height={400}
           onClick={() => {}}
         />
         <FilterContainer />
+        <VideoPlayer videoSrc="https://res.cloudinary.com/miguelcc/video/upload/v1723839877/Logo_1Up_Azules_Y_Naranjas_bnlahh.mp4" />
+        <Carousel
+          options={{ loop: true }}
+          itemsPerSlide={3}
+          className="w-full"
+        >
+          <Img
+            src="https://res.cloudinary.com/miguelcc/image/upload/v1723831934/Copia_de_Copia_de_IMG_9869_ov9sqd.webp"
+            alt="Documental"
+            width={600}
+            height={600}
+          />
+          <Img
+            src="https://res.cloudinary.com/miguelcc/image/upload/v1723831934/Copia_de_Copia_de_IMG_0827_gohtgl.webp"
+            alt="Documental"
+            width={600}
+            height={600}
+          />
+          <Img
+            src="https://res.cloudinary.com/miguelcc/image/upload/v1723831933/Copia_de_Copia_de_IMG_9839_mkz73d.webp"
+            alt="Documental"
+            width={600}
+            height={600}
+          />
+        </Carousel>
+        <Footer />
       </div>
-    </div>
+    </Container>
   );
 };
 

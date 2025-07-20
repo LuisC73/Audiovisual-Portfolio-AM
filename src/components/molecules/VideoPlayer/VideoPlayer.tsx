@@ -1,7 +1,13 @@
-import Plyr from 'plyr-react';
-import 'plyr-react/dist/plyr.css';
+'use client';
+
+import dynamic from 'next/dynamic';
+// import Plyr from 'plyr-react';
+import 'plyr-react/plyr.css';
 import { VideoPlayerProps } from './types';
 import { usePlyrReady } from '@/hooks';
+import { generateVideoClasses } from './helpers';
+
+const Plyr = dynamic(() => import('plyr-react'), { ssr: false });
 
 export const VideoPlayer = (props: VideoPlayerProps) => {
   const {
@@ -29,6 +35,7 @@ export const VideoPlayer = (props: VideoPlayerProps) => {
   } = props;
 
   const plyrRef = usePlyrReady(onReady);
+  const videoClass: string = generateVideoClasses(className);
 
   return (
     <Plyr
@@ -53,7 +60,7 @@ export const VideoPlayer = (props: VideoPlayerProps) => {
       onVolumeChange={onVolumeChange}
       onSeeked={onSeeked}
       onRateChange={onRateChange}
-      className={className}
+      className={videoClass}
     />
   );
 };
