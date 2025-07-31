@@ -1,4 +1,4 @@
-import { LoopAssets } from '@/lib/types';
+import { LoopAssets } from '@/types';
 
 const BASE_URL = process.env.NEXT_PUBLIC_CLOUDFLARE_R2_BASE_URL;
 

@@ -1,4 +1,4 @@
-import { ImageData } from '@/lib/types';
+import { ImageData } from '@/types';
 import { IMAGES_ASSETS } from '../images/images';
 import { IMAGE_CATEGORIES } from './categories';
 
@@ -41,4 +41,11 @@ export const HIGHLIGHT_IMAGES_DATA: ImageData[] = [
   },
 ];
 
-export const IMAGE_DATA: ImageData[] = [];
+export const IMAGE_DATA: ImageData[] = [
+  {
+    id: 'landscape-photo-5',
+    type: IMAGE_CATEGORIES.landscapes,
+    img: IMAGES_ASSETS.landscapes.landscape_5,
+    orientation: 'vertical',
+  },
+];

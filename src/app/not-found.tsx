@@ -1,11 +1,11 @@
 import { Container, Navbar } from '@/components';
 
-const HomePage = () => {
+const Custom404 = () => {
   return (
     <Container className="flex flex-col">
-      <Navbar page="home" />
+      <Navbar page="404" />
     </Container>
   );
 };
 
-export default HomePage;
+export default Custom404;

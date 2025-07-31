@@ -4,7 +4,7 @@ import {
   REEL_LOOP,
   SOCIAL_MEDIA_LOOPS,
   VIDEO_MONTAGE_LOOPS,
-} from '@/lib/constants/videos/loops';
+} from '@/constants/videos/loops';
 
 import {
   ANIMATED_PIECES_VIDEOS,
@@ -12,7 +12,7 @@ import {
   REEL_VIDEO,
   SOCIAL_MEDIA_VIDEOS,
   VIDEO_MONTAGE_VIDEOS,
-} from '@/lib/constants/videos/videos';
+} from '@/constants/videos/videos';
 
 export interface VideoAssets {
   animations: typeof ANIMATIONS_VIDEOS;

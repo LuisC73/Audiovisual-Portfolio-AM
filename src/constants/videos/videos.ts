@@ -1,4 +1,4 @@
-import { VideoAssets } from '@/lib/types';
+import { VideoAssets } from '@/types';
 
 const BASE_URL = process.env.NEXT_PUBLIC_CLOUDFLARE_R2_BASE_URL;
 

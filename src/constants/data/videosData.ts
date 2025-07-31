@@ -1,4 +1,4 @@
-import { VideoData } from '@/lib/types';
+import { VideoData } from '@/types';
 import { LOOPS_ASSETS } from '../videos/loops';
 import { VIDEOS_ASSETS } from '../videos/videos';
 import { VIDEO_CATEGORIES } from './categories';

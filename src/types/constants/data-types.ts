@@ -1,5 +1,5 @@
-import { IMAGE_CATEGORIES } from '@/lib/constants';
-import { VIDEO_CATEGORIES } from '@/lib/constants/data/categories';
+import { IMAGE_CATEGORIES } from '@/constants';
+import { VIDEO_CATEGORIES } from '@/constants/data/categories';
 
 export type ImageCategory =
   (typeof IMAGE_CATEGORIES)[keyof typeof IMAGE_CATEGORIES];

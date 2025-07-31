@@ -13,7 +13,7 @@ import {
   PICTURE_CDI_IMAGES,
   PORTRAIT_IMAGES,
   SPACE_IMAGES,
-} from '@/lib/constants/images/images';
+} from '@/constants/images/images';
 
 export interface ImageAssets {
   documentary: typeof DOCUMENTARY_IMAGES;
