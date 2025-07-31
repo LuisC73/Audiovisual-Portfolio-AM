@@ -4,6 +4,5 @@ export interface ImgProps {
   width?: number;
   height?: number;
   className?: string;
-  loading?: 'lazy' | 'eager';
   onLoad?: () => void;
 }

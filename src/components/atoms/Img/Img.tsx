@@ -3,7 +3,7 @@ import { ImgProps } from './types';
 import { generateImgClasses } from './helpers';
 
 export const Img = (props: ImgProps) => {
-  const { src, alt, width, height, className, loading, onLoad } = props;
+  const { src, alt, width, height, className, onLoad } = props;
   const imgClass: string = generateImgClasses(className);
 
   return (
@@ -13,7 +13,7 @@ export const Img = (props: ImgProps) => {
         alt={alt}
         width={width || 100}
         height={height || 100}
-        loading={loading}
+        loading='lazy'
         onLoad={onLoad}
       />
     </picture>
