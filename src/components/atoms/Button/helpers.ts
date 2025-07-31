@@ -15,10 +15,14 @@ export const generateButtonClasses = (
           variant === 'filled' && color === 'primary',
         'border-black bg-black text-white hover:bg-black/70':
           variant === 'filled' && color === 'secondary',
-        'border-white bg-transparent text-white': variant === 'outline' && color === 'primary',
-        'border-black bg-transparent text-black': variant === 'outline' && color === 'secondary',
-        'border-transparent bg-transparent text-white': variant === 'text' && color === 'primary',
-        'border-transparent bg-transparent text-black': variant === 'text' && color === 'secondary',
+        'border-white bg-transparent text-white':
+          variant === 'outline' && color === 'primary',
+        'border-black bg-transparent text-black':
+          variant === 'outline' && color === 'secondary',
+        'border-transparent bg-transparent text-white':
+          variant === 'text' && color === 'primary',
+        'border-transparent bg-transparent text-black':
+          variant === 'text' && color === 'secondary',
       }
     ),
     className

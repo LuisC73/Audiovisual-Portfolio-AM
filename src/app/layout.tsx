@@ -19,7 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${outfitSans.variable} antialiased bg-tertiary`}>{children}</body>
+      <body className={`${outfitSans.variable} bg-tertiary antialiased`}>
+        {children}
+      </body>
     </html>
   );
 }

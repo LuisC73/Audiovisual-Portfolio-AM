@@ -15,13 +15,13 @@ export const Modal = ({ id, children, onClose }: ModalProps) => {
           id={id}
           role="dialog"
           aria-modal="true"
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-60 backdrop-blur-sm"
+          className="bg-opacity-60 fixed inset-0 z-50 flex items-center justify-center bg-black backdrop-blur-sm"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
         >
           <motion.div
-            className="relative max-w-3xl w-full bg-black-on-color text-white-color p-6 rounded-xl shadow-lg"
+            className="bg-black-on-color text-white-color relative w-full max-w-3xl rounded-xl p-6 shadow-lg"
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.9, opacity: 0 }}

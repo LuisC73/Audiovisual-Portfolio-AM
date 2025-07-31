@@ -1,4 +1,4 @@
-import { ImgProps } from "@/components/atoms/Img/types";
+import { ImgProps } from '@/components/atoms/Img/types';
 
 export interface CardImageProps {
   id: string;

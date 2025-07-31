@@ -1,4 +1,4 @@
-import { APITypes } from "plyr-react";
+import { APITypes } from 'plyr-react';
 
 export interface VideoPlayerProps {
   videoSrc: string;

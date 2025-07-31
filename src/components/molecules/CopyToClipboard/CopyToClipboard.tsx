@@ -7,8 +7,10 @@ export const CopyToClipboard = ({ value }: CopyToClipboardProps) => {
   const { isCopied, copyToClipboard } = useCopyToClipboard(value);
 
   return (
-    <div className="w-fit flex items-center justify-center gap-4 py-3 px-7 bg-white rounded-2xl group">
-      <span className="text-base text-black group-hover:text-black/70">{value}</span>
+    <div className="group flex w-fit items-center justify-center gap-4 rounded-2xl bg-white px-7 py-3">
+      <span className="text-base text-black group-hover:text-black/70">
+        {value}
+      </span>
       <Button
         variant="text"
         color="secondary"

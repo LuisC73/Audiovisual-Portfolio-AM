@@ -6,11 +6,8 @@ export const FilterContainer = () => {
   const { isOpen, toggle, close } = useDropdown();
 
   return (
-    <div className='flex items-center gap-3 p-3'>
-      <Button
-        variant="filled"
-        color="primary"
-      >
+    <div className="flex items-center gap-3 p-3">
+      <Button variant="filled" color="primary">
         Todos
       </Button>
       <Dropdown

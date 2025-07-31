@@ -6,7 +6,8 @@ import { useId, useRef } from 'react';
 import { useClickOutside } from '@/hooks';
 
 export const Dropdown = (props: DropdownProps) => {
-  const { button, buttonChildren, isOpen, className, children, onToggle } = props;
+  const { button, buttonChildren, isOpen, className, children, onToggle } =
+    props;
   const dropdownClass: string = generateDropdownClasses(className);
   const id = useId();
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -16,10 +17,7 @@ export const Dropdown = (props: DropdownProps) => {
   });
 
   return (
-    <div
-      className="relative"
-      ref={dropdownRef}
-    >
+    <div className="relative" ref={dropdownRef}>
       <Button
         {...button}
         onClick={onToggle}

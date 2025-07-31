@@ -6,10 +6,7 @@ export const Button = (props: ButtonProps) => {
   const buttonClass: string = generateButtonClasses(variant, color, className);
 
   return (
-    <button
-      className={buttonClass}
-      {...rest}
-    >
+    <button className={buttonClass} {...rest}>
       {children}
     </button>
   );

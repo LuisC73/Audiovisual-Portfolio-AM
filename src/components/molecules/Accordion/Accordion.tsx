@@ -11,18 +11,17 @@ export const Accordion = (props: AccordionProps) => {
   return (
     <div
       id={id}
-      className='w-full py-10 border-b border-secondary bg-tertiary overflow-hidden'
+      className="border-secondary bg-tertiary w-full overflow-hidden border-b py-10"
     >
       <button
-        className="w-full flex items-center justify-between h-fit p-0 group cursor-pointer"
+        className="group flex h-fit w-full cursor-pointer items-center justify-between p-0"
         onClick={() => onClick(id)}
       >
-        <Tag className="text-2xl font-medium text-white group-hover:text-secondary">{label}</Tag>
+        <Tag className="group-hover:text-secondary text-2xl font-medium text-white">
+          {label}
+        </Tag>
         <div className="flex items-center justify-center">
-          <ChevronDown
-            size={24}
-            className={chevronClass}
-          />
+          <ChevronDown size={24} className={chevronClass} />
         </div>
       </button>
 
@@ -38,11 +37,11 @@ export const Accordion = (props: AccordionProps) => {
               collapsed: { height: 0, opacity: 0 },
             }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
-            className="overflow-hidden flex flex-col gap-10"
+            className="flex flex-col gap-10 overflow-hidden"
           >
             <div className="flex items-center gap-3">
               <p className="text-base text-white">{place}</p>
-              <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+              <div className="bg-primary h-1.5 w-1.5 rounded-full" />
               <p className="text-base text-white">{date}</p>
             </div>
             <div className="text-secondary">{children}</div>

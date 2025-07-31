@@ -13,7 +13,7 @@ export const Img = (props: ImgProps) => {
         alt={alt}
         width={width || 100}
         height={height || 100}
-        loading='lazy'
+        loading="lazy"
         onLoad={onLoad}
       />
     </picture>

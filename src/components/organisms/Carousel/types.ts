@@ -1,5 +1,5 @@
-import useEmblaCarousel from "embla-carousel-react";
-import { ReactNode } from "react";
+import useEmblaCarousel from 'embla-carousel-react';
+import { ReactNode } from 'react';
 
 type CarouselOptions = Parameters<typeof useEmblaCarousel>[0] & {
   autoplayInterval?: number;

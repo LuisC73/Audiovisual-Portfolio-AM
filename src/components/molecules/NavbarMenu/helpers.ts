@@ -1,4 +1,4 @@
-import { easeIn, easeInOut, easeOut } from "motion";
+import { easeIn, easeInOut, easeOut } from 'motion';
 
 export const getDinamicImage = (page: string) => {
   switch (page) {

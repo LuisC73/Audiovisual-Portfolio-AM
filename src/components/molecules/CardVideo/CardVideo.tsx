@@ -3,11 +3,12 @@ import { CardVideoProps } from './types';
 import { Play } from 'lucide-react';
 
 export const CardVideo = (props: CardVideoProps) => {
-  const { id, src, poster, title, description, date, width, height, onClick } = props;
+  const { id, src, poster, title, description, date, width, height, onClick } =
+    props;
 
   return (
     <div
-      className="relative w-fit h-fit rounded-2xl group cursor-pointer overflow-hidden"
+      className="group relative h-fit w-fit cursor-pointer overflow-hidden rounded-2xl"
       onClick={() => onClick?.(id)}
     >
       {src && (
@@ -18,7 +19,7 @@ export const CardVideo = (props: CardVideoProps) => {
           muted
           width={width}
           height={height}
-          className="opacity-80 group-hover:opacity-60 transition"
+          className="opacity-80 transition group-hover:opacity-60"
         />
       )}
       {poster && (
@@ -30,19 +31,15 @@ export const CardVideo = (props: CardVideoProps) => {
           height={height}
         />
       )}
-      <div className="absolute left-1/2 top-1/2 flex flex-col items-center justify-center gap-1 -translate-1/2">
+      <div className="absolute top-1/2 left-1/2 flex -translate-1/2 flex-col items-center justify-center gap-1">
         <div className="flex items-center justify-center">
-          <Play
-            size={24}
-            fill="#fff"
-            className="text-white"
-          />
+          <Play size={24} fill="#fff" className="text-white" />
         </div>
         <span className="text-sm text-white opacity-0 transition group-hover:opacity-100">
           Ver video
         </span>
       </div>
-      <div className="absolute left-0 bottom-0 w-full flex items-center justify-between p-3">
+      <div className="absolute bottom-0 left-0 flex w-full items-center justify-between p-3">
         <div className="flex flex-col gap-2">
           <h5 className="text-lg font-medium text-white">{title}</h5>
           <p className="text-sm text-white">{description}</p>

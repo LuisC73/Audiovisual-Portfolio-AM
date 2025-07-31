@@ -1,7 +1,12 @@
 import { generateCardClasses } from './helpers';
 import { CardServiceProps, LabelTag } from './types';
 
-export const CardService = ({ labelTag, label, description, className }: CardServiceProps) => {
+export const CardService = ({
+  labelTag,
+  label,
+  description,
+  className,
+}: CardServiceProps) => {
   const Tag: LabelTag = labelTag;
   const cardClass: string = generateCardClasses(className);
 

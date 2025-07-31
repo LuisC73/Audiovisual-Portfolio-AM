@@ -11,7 +11,9 @@ export const ModalImage = ({ src, alt, className }: ModalImageProps) => {
 
   return (
     <div className="w-full">
-      {!loading && <div className="w-full aspect-video bg-gray-color animate-pulse rounded-md" />}
+      {!loading && (
+        <div className="bg-gray-color aspect-video w-full animate-pulse rounded-md" />
+      )}
       <Img
         src={src}
         alt={alt}

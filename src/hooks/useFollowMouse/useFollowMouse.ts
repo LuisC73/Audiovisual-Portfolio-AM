@@ -4,8 +4,12 @@ export const useFollowMouse = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [isHovering, setIsHovering] = useState(false);
 
-  const handleMouseMove = (e: React.MouseEvent<HTMLElement>, elementSize = 40) => {
-    const { left, top, width, height } = e.currentTarget.getBoundingClientRect();
+  const handleMouseMove = (
+    e: React.MouseEvent<HTMLElement>,
+    elementSize = 40
+  ) => {
+    const { left, top, width, height } =
+      e.currentTarget.getBoundingClientRect();
     const halfSize = elementSize / 2;
     const x = e.clientX - left - halfSize;
     const y = e.clientY - top - halfSize;

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 export const useCopyToClipboard = (value: string) => {
   const [isCopied, setIsCopied] = useState<boolean>(false);
@@ -14,10 +14,10 @@ export const useCopyToClipboard = (value: string) => {
       setIsCopied(false);
       return false;
     }
-  }
+  };
 
   return {
     isCopied,
-    copyToClipboard
-  }
-}
+    copyToClipboard,
+  };
+};

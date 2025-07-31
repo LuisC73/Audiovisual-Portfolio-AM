@@ -13,7 +13,14 @@ export const VideoPlayer = (props: VideoPlayerProps) => {
   const {
     videoSrc,
     videoType = 'video/mp4',
-    controls = ['play', 'progress', 'current-time', 'mute', 'volume', 'fullscreen'],
+    controls = [
+      'play',
+      'progress',
+      'current-time',
+      'mute',
+      'volume',
+      'fullscreen',
+    ],
     ratio = '16:9',
     autoplay = false,
     muted = false,

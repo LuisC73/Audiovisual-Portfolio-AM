@@ -11,7 +11,9 @@ export const ModalVideo = ({ src }: ModalVideoProps) => {
 
   return (
     <div>
-      {!loading && <div className="w-full aspect-video bg-gray-color animate-pulse rounded-md" />}
+      {!loading && (
+        <div className="bg-gray-color aspect-video w-full animate-pulse rounded-md" />
+      )}
 
       <VideoPlayer
         videoSrc={src}

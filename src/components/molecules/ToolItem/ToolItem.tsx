@@ -5,4 +5,4 @@ export const ToolItem = () => {
       <p>Tool Description</p>
     </div>
   );
-}
+};
