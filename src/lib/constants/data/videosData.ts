@@ -1,8 +1,9 @@
+import { VideoData } from '@/lib/types';
 import { LOOPS_ASSETS } from '../videos/loops';
 import { VIDEOS_ASSETS } from '../videos/videos';
 import { VIDEO_CATEGORIES } from './categories';
 
-export const HIGHLIGHT_VIDEOS_DATA = [
+export const HIGHLIGHT_VIDEOS_DATA: VideoData[] = [
   {
     id: 'podcast-video',
     title: 'Expectativa Podcast',
@@ -37,4 +38,4 @@ export const HIGHLIGHT_VIDEOS_DATA = [
   },
 ];
 
-export const VIDEOS_DATA = [];
+export const VIDEOS_DATA: VideoData[] = [];

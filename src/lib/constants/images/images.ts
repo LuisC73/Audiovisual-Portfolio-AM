@@ -1,6 +1,8 @@
-const BASE_URL = 'https://pub-83e1ef1038d14a1a93021b6e5a6d45ef.r2.dev';
+import { ImageAssets } from '@/lib/types';
 
-const DOCUMENTARY_IMAGES = {
+const BASE_URL = process.env.NEXT_PUBLIC_CLOUDFLARE_R2_BASE_URL;
+
+export const DOCUMENTARY_IMAGES = {
   documentary_1: `${BASE_URL}/documental-1.webp`,
   documentary_2: `${BASE_URL}/documental-2.webp`,
   documentary_3: `${BASE_URL}/documental-3.webp`,
@@ -8,9 +10,9 @@ const DOCUMENTARY_IMAGES = {
   documentary_5: `${BASE_URL}/documental-5.webp`,
   documentary_6: `${BASE_URL}/documental-6.webp`,
   documentary_7: `${BASE_URL}/documental-7.webp`,
-};
+} as const;
 
-const MARRIAGE_IMAGES = {
+export const MARRIAGE_IMAGES = {
   marriage_1: `${BASE_URL}/matrimonio-1.webp`,
   marriage_2: `${BASE_URL}/matrimonio-2.webp`,
   marriage_3: `${BASE_URL}/matrimonio-3.webp`,
@@ -26,9 +28,9 @@ const MARRIAGE_IMAGES = {
   marriage_13: `${BASE_URL}/matrimonio-13.webp`,
   marriage_14: `${BASE_URL}/matrimonio-14.webp`,
   marriage_15: `${BASE_URL}/matrimonio-15.webp`,
-};
+} as const;
 
-const ARTISTIC_IMAGES = {
+export const ARTISTIC_IMAGES = {
   artistic_1: `${BASE_URL}/artistica-1.webp`,
   artistic_2: `${BASE_URL}/artistica-2.webp`,
   artistic_3: `${BASE_URL}/artistica-3.webp`,
@@ -37,9 +39,9 @@ const ARTISTIC_IMAGES = {
   artistic_6: `${BASE_URL}/artistica-6.webp`,
   artistic_7: `${BASE_URL}/artistica-7.webp`,
   artistic_8: `${BASE_URL}/artistica-8.webp`,
-};
+} as const;
 
-const EVENT_IMAGES = {
+export const EVENT_IMAGES = {
   event_1: `${BASE_URL}/evento-1.webp`,
   event_2: `${BASE_URL}/evento-2.webp`,
   event_3: `${BASE_URL}/evento-3.webp`,
@@ -64,9 +66,9 @@ const EVENT_IMAGES = {
   event_22: `${BASE_URL}/evento-22.webp`,
   event_23: `${BASE_URL}/evento-23.webp`,
   event_24: `${BASE_URL}/evento-24.webp`,
-};
+} as const;
 
-const PICTURE_CDI_IMAGES = {
+export const PICTURE_CDI_IMAGES = {
   picture_cdi_1: `${BASE_URL}/cuadro-cdi-1.webp`,
   picture_cdi_2: `${BASE_URL}/cuadro-cdi-2.webp`,
   picture_cdi_3: `${BASE_URL}/cuadro-cdi-3.webp`,
@@ -77,9 +79,9 @@ const PICTURE_CDI_IMAGES = {
   picture_cdi_8: `${BASE_URL}/cuadro-cdi-8.webp`,
   picture_cdi_9: `${BASE_URL}/cuadro-cdi-9.webp`,
   picture_cdi_10: `${BASE_URL}/cuadro-cdi-10.webp`,
-};
+} as const;
 
-const CAFE_IMAGES = {
+export const CAFE_IMAGES = {
   cafe_1: `${BASE_URL}/cafeteria-1.webp`,
   cafe_2: `${BASE_URL}/cafeteria-2.webp`,
   cafe_3: `${BASE_URL}/cafeteria-3.webp`,
@@ -91,9 +93,9 @@ const CAFE_IMAGES = {
   cafe_9: `${BASE_URL}/cafeteria-9.webp`,
   cafe_10: `${BASE_URL}/cafeteria-10.webp`,
   cafe_11: `${BASE_URL}/cafeteria-11.webp`,
-};
+} as const;
 
-const LUNCH_GRILL_IMAGES = {
+export const LUNCH_GRILL_IMAGES = {
   lunch_grill_1: `${BASE_URL}/lunch-grill-1.webp`,
   lunch_grill_2: `${BASE_URL}/lunch-grill-2.webp`,
   lunch_grill_3: `${BASE_URL}/lunch-grill-3.webp`,
@@ -109,9 +111,9 @@ const LUNCH_GRILL_IMAGES = {
   lunch_grill_13: `${BASE_URL}/lunch-grill-13.webp`,
   lunch_grill_14: `${BASE_URL}/lunch-grill-14.webp`,
   lunch_grill_15: `${BASE_URL}/lunch-grill-15.webp`,
-};
+} as const;
 
-const PORTRAIT_IMAGES = {
+export const PORTRAIT_IMAGES = {
   portrait_1: `${BASE_URL}/retrato-1.webp`,
   portrait_2: `${BASE_URL}/retrato-2.webp`,
   portrait_3: `${BASE_URL}/retrato-3.webp`,
@@ -124,9 +126,9 @@ const PORTRAIT_IMAGES = {
   portrait_10: `${BASE_URL}/retrato-10.webp`,
   portrait_11: `${BASE_URL}/retrato-11.webp`,
   portrait_12: `${BASE_URL}/retrato-12.webp`,
-};
+} as const;
 
-const SPACE_IMAGES = {
+export const SPACE_IMAGES = {
   space_1: `${BASE_URL}/espacio-1.webp`,
   space_2: `${BASE_URL}/espacio-2.webp`,
   space_3: `${BASE_URL}/espacio-3.webp`,
@@ -139,18 +141,18 @@ const SPACE_IMAGES = {
   space_10: `${BASE_URL}/espacio-10.webp`,
   space_11: `${BASE_URL}/espacio-11.webp`,
   space_12: `${BASE_URL}/espacio-12.webp`,
-};
+} as const;
 
-const BRANDS_IMAGES = {
+export const BRANDS_IMAGES = {
   brand_1: `${BASE_URL}/marca-1.webp`,
   brand_2: `${BASE_URL}/marca-2.webp`,
   brand_3: `${BASE_URL}/marca-3.webp`,
   brand_4: `${BASE_URL}/marca-4.webp`,
   brand_5: `${BASE_URL}/marca-5.webp`,
   brand_6: `${BASE_URL}/marca-6.webp`,
-};
+} as const;
 
-const LANDSCAPES_IMAGES = {
+export const LANDSCAPES_IMAGES = {
   landscape_1: `${BASE_URL}/paisaje-1.webp`,
   landscape_2: `${BASE_URL}/paisaje-2.webp`,
   landscape_3: `${BASE_URL}/paisaje-3.webp`,
@@ -158,9 +160,9 @@ const LANDSCAPES_IMAGES = {
   landscape_5: `${BASE_URL}/paisaje-5.webp`,
   landscape_6: `${BASE_URL}/paisaje-6.webp`,
   landscape_7: `${BASE_URL}/paisaje-7.webp`,
-};
+} as const;
 
-const ANA_IMAGES = {
+export const ANA_IMAGES = {
   ana_1: `${BASE_URL}/ana-1.webp`,
   ana_2: `${BASE_URL}/ana-2.webp`,
   ana_3: `${BASE_URL}/ana-3.webp`,
@@ -168,9 +170,9 @@ const ANA_IMAGES = {
   ana_5: `${BASE_URL}/ana-5.webp`,
   ana_6: `${BASE_URL}/ana-6.webp`,
   ana_7: `${BASE_URL}/ana-7.webp`,
-};
+} as const;
 
-const HONDA_IMAGES = {
+export const HONDA_IMAGES = {
   honda_1: `${BASE_URL}/motos-honda-1.webp`,
   honda_2: `${BASE_URL}/motos-honda-2.webp`,
   honda_3: `${BASE_URL}/motos-honda-3.webp`,
@@ -189,9 +191,9 @@ const HONDA_IMAGES = {
   honda_16: `${BASE_URL}/motos-honda-16.webp`,
   honda_17: `${BASE_URL}/motos-honda-17.webp`,
   honda_18: `${BASE_URL}/motos-honda-18.webp`,
-};
+} as const;
 
-const CANDLES_IMAGES = {
+export const CANDLES_IMAGES = {
   candle_1: `${BASE_URL}/velas-1.webp`,
   candle_2: `${BASE_URL}/velas-2.webp`,
   candle_3: `${BASE_URL}/velas-3.webp`,
@@ -200,9 +202,9 @@ const CANDLES_IMAGES = {
   candle_6: `${BASE_URL}/velas-6.webp`,
   candle_7: `${BASE_URL}/velas-7.webp`,
   candle_8: `${BASE_URL}/velas-8.webp`,
-};
+} as const;
 
-export const IMAGES_ASSETS = {
+export const IMAGES_ASSETS: ImageAssets = {
   documentary: DOCUMENTARY_IMAGES,
   marriage: MARRIAGE_IMAGES,
   artistic: ARTISTIC_IMAGES,
@@ -217,4 +219,4 @@ export const IMAGES_ASSETS = {
   ana: ANA_IMAGES,
   honda: HONDA_IMAGES,
   candles: CANDLES_IMAGES,
-};
+} as const;

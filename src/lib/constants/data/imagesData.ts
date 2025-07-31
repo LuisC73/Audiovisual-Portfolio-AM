@@ -1,7 +1,8 @@
+import { ImageData } from '@/lib/types';
 import { IMAGES_ASSETS } from '../images/images';
 import { IMAGE_CATEGORIES } from './categories';
 
-export const HIGHLIGHT_IMAGES_DATA = [
+export const HIGHLIGHT_IMAGES_DATA: ImageData[] = [
   {
     id: 'landscape-photo',
     type: IMAGE_CATEGORIES.landscapes,
@@ -40,4 +41,4 @@ export const HIGHLIGHT_IMAGES_DATA = [
   },
 ];
 
-export const IMAGE_DATA = [];
+export const IMAGE_DATA: ImageData[] = [];

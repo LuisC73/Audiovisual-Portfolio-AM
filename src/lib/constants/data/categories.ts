@@ -3,7 +3,7 @@ export const VIDEO_CATEGORIES = {
   animated_pieces: 'Piezas animadas',
   video_montage: 'Montaje de video',
   social_media: 'Redes sociales',
-};
+} as const;
 
 export const IMAGE_CATEGORIES = {
   landscapes: 'Paisajes',
@@ -18,4 +18,4 @@ export const IMAGE_CATEGORIES = {
   portrait: 'Retratos',
   honda: 'Motos Honda',
   candles: 'Productos Velas',
-};
+} as const;
