@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react';
 import { VideoPlayer } from '../VideoPlayer/VideoPlayer';
 import { ModalVideoProps } from './types';

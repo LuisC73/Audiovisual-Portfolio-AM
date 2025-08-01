@@ -1,5 +1,6 @@
-import { Navbar } from '@/components';
-import { Container } from 'lucide-react';
+'use client';
+
+import { Container, Navbar } from '@/components';
 
 const AboutMePage = () => {
   return (

@@ -1,3 +1,5 @@
+'use client';
+
 import { Button } from '@/components/atoms';
 import { DropdownProps } from './types';
 import { motion, AnimatePresence } from 'motion/react';

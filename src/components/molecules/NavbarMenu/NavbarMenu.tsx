@@ -18,7 +18,7 @@ export const NavbarMenu = ({ isActive, page }: NavbarMenuProps) => {
           variants={menuVariants}
           className="bg-tertiary absolute top-auto left-0 flex h-dvh w-full flex-col gap-10 px-3 py-20 text-white md:px-6 lg:px-8"
         >
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+          <div className="grid grid-cols-1 items-center gap-6 md:grid-cols-2">
             <ul className="flex flex-col gap-5">
               <li>
                 <Link
@@ -30,7 +30,7 @@ export const NavbarMenu = ({ isActive, page }: NavbarMenuProps) => {
               </li>
               <li>
                 <Link
-                  href="/about-me"
+                  href="/acerca-de-mi"
                   className="hover:text-secondary text-5xl font-medium text-white transition"
                 >
                   Acerca de mí
@@ -38,7 +38,7 @@ export const NavbarMenu = ({ isActive, page }: NavbarMenuProps) => {
               </li>
               <li>
                 <Link
-                  href="/photographs"
+                  href="/fotografias"
                   className="hover:text-secondary text-5xl font-medium text-white transition"
                 >
                   Fotografías
@@ -54,7 +54,12 @@ export const NavbarMenu = ({ isActive, page }: NavbarMenuProps) => {
               </li>
             </ul>
 
-            <Img src={imageSrc} alt="Descripción de la imagen" />
+            <Img
+              src={imageSrc}
+              alt="Descripción de la imagen"
+              width={426}
+              height={412}
+            />
           </div>
 
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">

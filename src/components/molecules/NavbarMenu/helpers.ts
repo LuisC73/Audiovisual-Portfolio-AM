@@ -1,19 +1,20 @@
+import { IMAGES_ASSETS } from '@/constants';
 import { easeIn, easeInOut, easeOut } from 'motion';
 
 export const getDinamicImage = (page: string) => {
   switch (page) {
     case 'home':
-      return '/images/home.jpg';
+      return IMAGES_ASSETS.ana.ana_8;
     case 'about':
-      return '/images/about.jpg';
+      return IMAGES_ASSETS.ana.ana_4;
     case 'photographs':
-      return '/images/photographs.jpg';
+      return IMAGES_ASSETS.landscapes.landscape_1;
     case 'videos':
-      return '/images/videos.jpg';
+      return IMAGES_ASSETS.ana.ana_9;
     case '404':
-      return '/images/404.jpg';
+      return IMAGES_ASSETS.ana.ana_6;
     default:
-      return '/images/default.jpg';
+      return IMAGES_ASSETS.ana.ana_8;
   }
 };
 

@@ -1,3 +1,5 @@
+'use client';
+
 import { Container, Navbar } from '@/components';
 
 const HomePage = () => {

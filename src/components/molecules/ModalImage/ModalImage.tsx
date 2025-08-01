@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react';
 import { ModalImageProps } from './types';
 import { Img } from '@/components/atoms';
@@ -14,13 +16,7 @@ export const ModalImage = ({ src, alt, className }: ModalImageProps) => {
       {!loading && (
         <div className="bg-gray-color aspect-video w-full animate-pulse rounded-md" />
       )}
-      <Img
-        src={src}
-        alt={alt}
-        loading="lazy"
-        className={className}
-        onLoad={handleImageLoad}
-      />
+      <Img src={src} alt={alt} className={className} onLoad={handleImageLoad} />
     </div>
   );
 };

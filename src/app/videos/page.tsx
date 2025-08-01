@@ -1,4 +1,6 @@
-import { Container, Navbar } from "@/components";
+'use client';
+
+import { Container, Navbar } from '@/components';
 
 const VideosPage = () => {
   return (

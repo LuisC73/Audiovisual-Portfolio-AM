@@ -170,6 +170,8 @@ export const ANA_IMAGES = {
   ana_5: `${BASE_URL}/ana-5.webp`,
   ana_6: `${BASE_URL}/ana-6.webp`,
   ana_7: `${BASE_URL}/ana-7.webp`,
+  ana_8: `${BASE_URL}/ana-8.webp`,
+  ana_9: `${BASE_URL}/ana-9.webp`,
 } as const;
 
 export const HONDA_IMAGES = {

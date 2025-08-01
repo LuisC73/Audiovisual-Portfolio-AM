@@ -1,3 +1,5 @@
+'use client';
+
 import { useEffect } from 'react';
 
 export const useModal = (isOpen: boolean, onClose: () => void) => {
